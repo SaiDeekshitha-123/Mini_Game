@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini JavaScript Games 🎮</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎮 Mini JavaScript Games</h1>
+
+  <!-- MENU -->
+  <div class="menu" id="menu">
+    <button onclick="showGame('tic')">Tic Tac Toe ❌⭕</button>
+    <button onclick="showGame('memory')">Memory Game 🃏</button>
+    <button onclick="showGame('snake')">Snake 🐍</button>
+    <button onclick="showGame('rps')">Rock Paper Scissors ✊✋✌️</button>
+  </div>
+
+  <!-- TIC TAC TOE -->
+  <div class="game" id="tic" style="display:none;">
+    <h2>Tic Tac Toe ❌⭕</h2>
+    <div class="board" id="board"></div>
+    <p id="tic-status"></p>
+    <button onclick="restartTic()">Restart</button>
+    <button onclick="backMenu()">⬅ Back</button>
+  </div>
+
+  <!-- MEMORY GAME -->
+  <div class="game" id="memory" style="display:none;">
+    <h2>Memory Card Flip 🃏</h2>
+    <div class="memory-board" id="memory-board"></div>
+    <p id="memory-status"></p>
+    <button onclick="restartMemory()">Restart</button>
+    <button onclick="backMenu()">⬅ Back</button>
+  </div>
+
+  <!-- SNAKE -->
+  <div class="game" id="snake" style="display:none;">
+    <h2>Snake 🐍</h2>
+    <canvas id="snakeCanvas" width="400" height="400"></canvas>
+    <p id="snake-status"></p>
+    <button onclick="restartSnake()">Restart</button>
+    <button onclick="backMenu()">⬅ Back</button>
+  </div>
+
+  <!-- ROCK PAPER SCISSORS -->
+  <div class="game" id="rps" style="display:none;">
+    <h2>Rock Paper Scissors ✊✋✌️</h2>
+    <div class="rps-buttons">
+      <button onclick="playRPS('rock')">✊ Rock</button>
+      <button onclick="playRPS('paper')">✋ Paper</button>
+      <button onclick="playRPS('scissors')">✌️ Scissors</button>
+    </div>
+    <p id="rps-result"></p>
+    <button onclick="backMenu()">⬅ Back</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
