@@ -44,7 +44,7 @@ Mini-JS-Games/
 
 ## 🎯 How to Run
 1. Download or clone this repository:
-   git clone https://github.com/your-username/mini-js-games.git
+   git clone (https://saideekshitha-123.github.io/Mini_Game/)
 Open index.html in your browser.
 
 Select a game from the menu and start playing 🎉
